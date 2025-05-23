@@ -8,29 +8,34 @@ This system is meant to serve people who need a spaced repetition system, but do
 
 ## How?
 
-- The system is composed of 3 slightly modified [Leitner systems](https://en.wikipedia.org/wiki/Leitner_system), each with varying base periods (day, week, month) piped back to back. Anybody seeking to use or understand Papermemo should first get familiar with the Leitner system, especially the *Proficiency levels* mode. 
-- The [design.jpeg](design.jpeg) file further explains the system. It's not very well articulated at the moment due to lack of time. A dedicated person should be able to understand it.
-- The system is meant to be used with a custom keyboard sized box (3D printed) made for this purpose.
-  - A possible design for the box is: 3 rows, each with 10 slots to put the Leitner layer decks in, along with 31 3D-printed decks to put in these slots, each of which hold hard-paper based cards.
-  - Color coding can be used on the decks instead of numbers (in Leitner system) for faster access.
-  - Daily review process: 
-    1. Take the relevant decks for today out of their slots. Don't take out the cards out of the decks to prevent mixup.
-    2. Review the decks and move the cards depending on remember/forget.
-    3. Put the decks back into their slots.
-- There are a total of 33 decks. Cards move through the in the following order:
-  1. 1 waitlist deck to store new cards before they move into the system.
-  2. 1 deck reviewed every day, holding maximum 7 cards.
-  3. 10 daily Leitner decks, each holding ~8 cards.
-  4. 10 weekly Leitner decks, each holding ~32 cards.
-  5. 10 monthly Leitner decks, each holding ~230 cards.
-  6. The retired cards deck, to store retired cards indefinitely.
-- Maximum interval tops out at 7 months before a card is retired.
-- If a card is remembered correctly it stays or moves according to Leitner system. If it's not remembered correctly it moves to the previous layer.
+- The system is composed of 3 slightly modified [Leitner systems](https://en.wikipedia.org/wiki/Leitner_system), each with varying base periods (day, week, month) piped back to back. Anybody seeking to use or understand Papermemo should first get familiar with the Leitner system, especially the [*Proficiency levels* mode](https://en.wikipedia.org/wiki/Leitner_system#Proficiency_levels).
+- The [design.jpeg](design.jpeg) file visually explains the pipeline. It's not very well articulated at the moment due to lack of time, but a dedicated person should be able to understand it.
+- The system is meant to be used with a 3D-printed ~keyboard-sized box custom designed for this purpose (if you design one, please tell me!)
+  - A possible design for the box is: 3 rows, each with 10 slots to put the Leitner layer decks in, along with 30 plastic decks to put in these slots, each of which hold hard-paper based cards.
+  - Color coding can be used instead of Leitner numbers for faster access.
+  - Reverse cards can be used to improve both recognition & recall. In that case, all deck sizes calculated in this document would have to double.
+
+- If a card is remembered correctly it stays or moves according to the Leitner system. If it's not remembered correctly it moves to the previous layer.
+- There are a total of 33 decks. Cards move through the pipeline in the following order:
+
+1. 1 waitlist deck to store new cards before they move into the system.
+2. 1 deck reviewed every day, holding maximum 7 cards.
+3. 10 daily Leitner decks, each holding ~8 cards.
+4. 10 weekly Leitner decks, each holding ~32 cards.
+5. 10 monthly Leitner decks, each holding ~230 cards.
+6. The retired cards deck, to store retired cards indefinitely.
+
+### Daily review process
+
+1. Take the relevant decks for today out of their slots. Don't take out the cards out of the decks to prevent mixup.
+2. Review the decks and move the cards depending on remember/forget.
+3. Put the decks back into their slots.
 
 ## Limitations
 
-- The system accepts at most 7 new cards a day, totaling at ~2500 cards/year (you can still make cards and put them in the waitlist).
+- The system accepts at most 7 new cards a day, totaling at maximum ~2500 new cards/year (you can still make cards and put them in the waitlist).
 - At most 96 cards can be reviewed per day.
+- Maximum interval tops out at 7 months before a card is retired.
 
 ## Design decisions
 
